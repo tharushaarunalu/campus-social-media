@@ -1,0 +1,19 @@
+<!-- groupPosts.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= group.name %> - Posts</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h1>Posts in <%= group.name %></h1>
+    <% posts.forEach(post => { %>
+        <div class="post">
+            <h2><%= post.title %></h2>
+            <p><%= post.content %></p>
+        </div>
+    <% }); %>
+</body>
+</html>

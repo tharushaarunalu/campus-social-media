@@ -1,0 +1,49 @@
+campus-social-media/
+├── node_modules/              # Node.js dependencies
+├── public/                    # Static files
+│   ├── css/
+│   │   └── styles.css         # Custom styles
+│   ├── js/
+│   │   └── scripts.js         # JavaScript for frontend
+│   ├── uploads/               # Uploaded images (profile pics, post images)
+│   │   └── default.png        # Default profile picture
+├── views/                     # EJS template files
+│   ├── home.ejs               # Home page
+│   ├── register.ejs           # Register page
+│   ├── login.ejs              # Login page
+│   ├── profile.ejs            # Profile page with upload feature
+│   ├── post.ejs               # Single post page
+│   ├── messages.ejs           # Messages page
+│   ├── groups.ejs             # Groups page
+│   ├── groupDetail.ejs        # Group detail page
+│   ├── groupPosts.ejs         # Group posts view
+│   ├── 404.ejs                # 404 error page
+├── routes/                    # Route handlers
+│   ├── authRoutes.js          # Authentication routes
+│   ├── postRoutes.js          # Post routes (Create, Edit, Like, etc.)
+│   ├── groupRoutes.js         # Group routes (Create, Join, etc.)
+│   ├── messageRoutes.js       # Message routes
+│   ├── notificationRoutes.js  # Notification routes
+├── controllers/               # Business logic for routes
+│   ├── authController.js      # Auth controller
+│   ├── postController.js      # Post controller
+│   ├── groupController.js     # Group controller
+│   ├── messageController.js   # Message controller
+│   ├── notificationController.js # Notification logic
+├── models/                    # Database models (MongoDB)
+│   ├── userModel.js           # User model
+│   ├── postModel.js           # Post model
+│   ├── groupModel.js          # Group model
+│   ├── messageModel.js        # Message model
+│   ├── notificationModel.js   # Notification model
+├── middleware/                # Middleware files
+│   ├── authMiddleware.js      # Authentication middleware
+├── config/                    # Configuration files
+│   ├── db.js                  # MongoDB connection
+│   ├── keys.js                # API keys and secrets
+├── .env                       # Environment variables
+├── .gitignore                 # Files to ignore in Git
+├── package.json               # Project dependencies and scripts
+├── package-lock.json          # Dependency lock file
+├── README.md                  # Documentation
+├── server.js                  # Main server file
